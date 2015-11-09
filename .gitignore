@@ -1,0 +1,9 @@
+=2.0.0pre
+/bin
+/include
+/lib
+/share
+*.pyc
+pip-selfcheck.json
+Procfile
+/admin

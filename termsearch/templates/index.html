@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block headstuff %}
+{% include 'autocomplete_light/static.html' %}
+{% endblock %}
+<body>
+
+
+
+{% block content %}
+{% if error == True %}
+<h2 style="color: #FF0000">Sorry, that didn't work.</h2>
+<form action="/search/" method="get">
+<div class="searchbox">
+{{ airport_search }}
+</div>
+<div class="searchbox">
+{{ airline_search }}
+</div>
+<div class="searchbox">
+<input type="submit" value="Find my terminal" />
+</div>
+</form>
+<div class="query">Are you sure you put in the right airport and airline?</div>
+</div>
+</div>
+</div>
+{% else %}
+<h2>a terminal lookup tool for airports</h2>
+<form action="/search/" method="get">
+<div class="searchbox">
+{{ airport_search }}
+</div>
+<div class="searchbox">
+{{ airline_search }}
+</div>
+<div class="searchbox">
+<input type="submit" value="Find my terminal" />
+</div>
+</form>
+
+{% endif %}
+
+{% endblock %}
+
+
+</body>
+</html>

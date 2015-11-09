@@ -1,0 +1,16 @@
+{% extends "index.html" %}
+{% block content %}
+<div class="results_head">
+<h2>search results</h2>
+</div>
+<div class="results">
+<p>
+{% if flip == True %}
+{{line}} flies out of <h2>{{departures}} {{term_or_con}}</h2> at {{port}}.
+{% else %}
+{{line}} flies out of <h2>{{term_or_con}} {{departures}}</h2> at {{port}}.
+{% endif %}
+</p>
+</div>
+<h2>&#8592;<a href="/">search again</h2></a>
+{% endblock %}
