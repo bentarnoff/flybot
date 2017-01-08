@@ -7,4 +7,4 @@ your airline, and it tells you your departure terminal.
 Most of the work involved scraping the terminal info from various sites with Python using Selenium Webdriver 
 and populating a monster Postgres database. The site itself was built in Django. Still squashing bugs, but it works.
 
-See it live at <a href="http://www.flybot.info">www.flybot.info</a>.
+See it live at <a href="https://flybot-termsearch.herokuapp.com">flybot</a>.
